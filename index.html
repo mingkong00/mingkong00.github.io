@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>포트폴리오</title>
+</head>
+<body>
+    <main>
+        <section class="sec1 main_page">
+            <img src="./static/images/main완성본.png" alt="">
+            <img class="sec1_move move1" src="./static/images/main1moving.png" alt="">
+            <img class="sec1_move move2" src="./static/images/main2moving.png" alt="">
+            <img class="sec1_move move3" src="./static/images/main3moving.png" alt="">
+        </section>
+
+        <!-- 도형 애니메이션 -->
+        <style>
+            @keyframes move1{
+                100% {
+                    top: 25px;
+                }
+            }
+
+            @keyframes move2{
+                100% {
+                    top: 5vh;
+                }
+            }
+
+            @keyframes move3{
+                100% {
+                    top: 15vh;
+                }
+            }
+
+            .sec1_move {
+                
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .move3 {
+                top: 10vh;
+                width: 250px;
+                padding: 480px;
+                left: -15%;
+                animation: move1 1.2s alternate infinite;
+            }
+            .move2 {
+                top: 10vh;
+                width: 120px;
+                left: 55%;
+                animation: move1 1.2s alternate infinite;
+            }
+            .move1 {
+                width: 250px;
+                left: -500px;
+                padding: 550px 500px 500px 450px;
+                left: 50%;
+                animation: move2 1.2s alternate infinite;
+            }
+        </style>
+
+        <section class="sec2 about_page">
+            <img src="./static/images/secondbackground.png" alt="">
+        </section>
+        <section class="sec3 portfolio_page">
+            <img src="./static/images/thirdbackground.png" alt="">
+        </section>
+        <section class="sec4 portfolio_page">
+                    <!-- Swiper -->
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./static/images/4-1bnr.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/images/4-2bnr.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/images/4-3bnr.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/images/5_1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/images/5_2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/images/5_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/images/5_4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/images/5_5.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/images/5_6.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/images/5_7.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+            },
+           speed:2000
+        });
+        </script>
+
+        <section class="sec5 thankyou_page">
+            <img src="./static/images/footer.png" alt="">
+        </section> 
+    </main>
+</body>
+</html>

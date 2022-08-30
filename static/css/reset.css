@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.sec1, .sec2, .sec3, .sec4, .sec5 {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+section img {
+    width: 100%;
+    vertical-align: bottom;
+}

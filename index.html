@@ -77,12 +77,20 @@
                 position: relative;
             }
 
-            .click_btn {
-                width: 65%;
+            .click_btn:first-child {
+                width: 25%;
                 height: 65vh;
                 position: absolute;
                 top: 10%;
                 left: 19%;
+                cursor: pointer;
+            }
+            .click_btn:last-child {
+                width: 40%;
+                height: 65vh;
+                position: absolute;
+                top: 13%;
+                left: 44%;
                 cursor: pointer;
             }
             .dimed_box {
@@ -131,6 +139,7 @@
         </section>
         <section class="sec3 portfolio_page">
             <img src="./static/images/KakaoTalk_20220830_230159194.png" alt="">
+            <div class="click_btn"></div>
             <div class="click_btn"></div>
             <div class="dimed_box">
                 <img class="exit_btn" src="./static/images/x.png" alt="">
